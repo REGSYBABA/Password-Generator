@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    font-family: 'Fredoka One', cursive;
+    font-family: 'PT Serif', serif;
+    box-sizing: border-box;
+    background-image: url("/W8rcJM.png");
+}
+
+.card {
+    width: 550px;
+    height:100%;
+    background-color: orange;
+    border-radius: 20px; 
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+.container {
+  padding: 30px;
+}
+
+.container h1{
+    margin-top: 50px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: capitalize;
+    letter-spacing: 0.05em;
+    font-family: 'PT Serif', serif;
+}
+
+span{
+    color: green
+}
+
+p {
+    margin-top: -16px;
+}
+
+.divisor input {
+   /*width: 300px;
+   margin-left: 20px;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   text-align: center;
+   font-size: 18px;border: 0.2px solid #273549;*/
+   width: 100%;
+   margin-top: 20px;
+   margin-bottom: 15px;
+}
+
+.generate-btn {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   padding: 9px 17px 9px 15px;
+   gap: 12px;
+   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+   border-radius: 6px;
+   margin-top: 51px;
+   margin-bottom: 35px;
+   font-family: 'Fredoka One', cursive;
+   letter-spacing: 2px;
+   border: none;
+   background-color: green;
+   color: white;
+   cursor: pointer;
+}
+
+.generate-btn:hover {
+    color: white;
+    background-color: black;
+}
+
+.password {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+
+}
+
+.length {
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 47px */
+}
+
+.length label{
+    margin-bottom: 40;   
+    
+}
+
+.length input {
+    width: 50%;  
+    color: black;
+}
+
+/* input {
+  margin-top: 35px;
+  width: 100%;  
+} */
+
+.password input {
+    width: 211px;
+    height: 39px;
+    padding: 20px 34px;
+    border-radius: 12px;
+    color: black;
+    border: none;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Brygada 1918', serif;
+    margin-top: 35px;
+    margin-bottom: 55px;
+    background-color: rgb(193, 133, 23);
+    font-size: 18px;
+    color: #273549;
+    font-family: cursive;
+}
+
+
+.password-1{
+    margin-left: 30px;    
+}
+
+.password-2{
+    margin-left: 50px;
+}
+
+.pass-settings .options1 {
+    margin: 2rem;
+}
+
+.pass-settings .options {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    margin-left: 2rem;
+}
+
+.pass-settings .options .option {
+    display: flex;
+    margin-bottom: 2rem;
+    margin-top: 17px;
+    align-items: center;
+    width: calc(100%/2);
+} 
+
+.options .option:first-child {
+    pointer-events: none;
+}
+
+.options .option:first-child input {
+    opacity: 0.7
+}
+
+.options .option input {
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+}
+
+.options .option label {
+    cursor: pointer;
+    padding-left: 0.63rem;
+}
+
