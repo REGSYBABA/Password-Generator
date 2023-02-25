@@ -1,3 +1,16 @@
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+  }
+
+
 body {
     margin: 0;
     font-family: 'Fredoka One', cursive;
@@ -6,13 +19,27 @@ body {
     background-image: url("/W8rcJM.png");
 }
 
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+}
+
 .card {
     width: 550px;
     height:100%;
     background-color: orange;
     border-radius: 20px; 
     overflow: hidden;
-    margin: 20px auto;
+    margin: 15px auto;
 }
 
 .container {
@@ -62,7 +89,7 @@ p {
    border-radius: 6px;
    margin-top: 51px;
    margin-bottom: 35px;
-   font-family: 'Fredoka One', cursive;
+   font-family: cursive;
    letter-spacing: 2px;
    border: none;
    background-color: green;
@@ -79,7 +106,13 @@ p {
     display: flex;
     justify-content: left;
     align-items: left;
+}
 
+.password .material-icons {
+    display: inline-flex;
+    height: 50px;
+    padding: 0px;
+    margin-top: 40px;
 }
 
 .length {
@@ -108,7 +141,7 @@ p {
     height: 39px;
     padding: 20px 34px;
     border-radius: 12px;
-    color: black;
+    color: #273549;
     border: none;
     font-size: 22px;
     font-weight: 700;
@@ -117,17 +150,27 @@ p {
     margin-bottom: 55px;
     background-color: rgb(193, 133, 23);
     font-size: 18px;
-    color: #273549;
     font-family: cursive;
 }
 
 
 .password-1{
-    margin-left: 30px;    
+    margin-left: 30px; 
+}
+
+.material-icons {
+    height: 20px;
+    cursor: pointer;
+    color:  rgb(193, 133, 23);
+    /* position: absolute; */
+}
+
+.material-icons:hover {
+    color: black;
 }
 
 .password-2{
-    margin-left: 50px;
+    margin-left: 25px;
 }
 
 .pass-settings .options1 {

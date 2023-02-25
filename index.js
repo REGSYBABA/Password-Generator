@@ -6,11 +6,11 @@ const characters = {
 }
 const lengthSlider =  document.querySelector(".length input")
 const spanValuing = document.querySelector(".length span")
+copyIcon = document.querySelector(".password span")
 options = document.querySelectorAll(".option input")
 let password1El = document.querySelector(".password-1")
 let password2El = document.querySelector(".password-2")
 let generator = document.querySelector(".container button")
-
 
 function getRandomCharacter() {
     let randomChar = Math.floor(Math.random() * characters.length)
@@ -47,39 +47,39 @@ function generateRandomPassword() {
     return randomPassword
 }
 
-
 generator.addEventListener("click",  function(){
     password1El.value =  generateRandomPassword()
     password2El.value =  generateRandomPassword()
 })
-
 
 const updateSlider = () => {
     spanValuing.textContent = lengthSlider.value
     generateRandomPassword()
 }
 updateSlider()
-lengthSlider.addEventListener("input", updateSlider)
+
+const copyPassword = () => {
+    navigator.clipboard.writeText(password1El.value)//write the passed text into the system's clipboard
+    copyIcon.innerText = "check"
+    setTimeout (() => {
+        copyIcon.innerText = "copy_all"
+    }, 1000)
+}
 
 
+function myFunction2() {
+    // Get the text field
+    var copyText2 = document.querySelector(".password-2");
+    var copyText3 = document.getElementById("balls")
+  
+    navigator.clipboard.writeText(copyText2.value);
+    
+    copyText3.innerText = "check"
+    // alert("Copied the text: " + copyText2.value);
+    setTimeout (() => {
+        copyText3.innerText = "copy_all"
+    }, 1000)
+  }
 
-//const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9","~","`","!","@","#","$","%","^","&","*","(",")","_","-","+","=","{","[","}","]",",","|",":",";","<",">",".","?",
-//];
-// let passwordLength = 12
-
-// function getRandomCharacter() {
-//     let randomChar = Math.floor(Math.random() * characters.length)
-//     return characters[randomChar]
-// }
-
-// function generateRandomPassword() {
-//     let randomPassword = ""
-//     for (let i = 0; i < passwordLength; i++) {
-//         randomPassword += getRandomCharacter()         
-//     }
-//     return randomPassword
-// }
-
-// const generatedPasswordOne = generateRandomPassword()
-
-// console.log("Here is a random password: ", generatedPasswordOne)
+copyIcon.addEventListener("click", copyPassword)
+lengthSlider.addEventListener("input", updateSlider)  
