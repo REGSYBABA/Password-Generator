@@ -70,7 +70,7 @@ const copyPassword = () => {
 function myFunction2() {
     // Get the text field
     var copyText2 = document.querySelector(".password-2");
-    var copyText3 = document.getElementById("balls")
+    var copyText3 = document.getElementById("ballz")
   
     navigator.clipboard.writeText(copyText2.value);
     
@@ -78,7 +78,7 @@ function myFunction2() {
     // alert("Copied the text: " + copyText2.value);
     setTimeout (() => {
         copyText3.innerText = "copy_all"
-    }, 1000)
+    }, 1500)
   }
 
 copyIcon.addEventListener("click", copyPassword)
