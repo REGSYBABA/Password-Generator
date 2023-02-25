@@ -4,6 +4,7 @@ const characters = {
     numbers: "0123456789",
     symbols: "~,!,@#$%^&*()_-={[},]|:;<>.?"
 }
+
 const lengthSlider =  document.querySelector(".length input")
 const spanValuing = document.querySelector(".length span")
 copyIcon = document.querySelector(".password span")
@@ -52,11 +53,14 @@ generator.addEventListener("click",  function(){
     password2El.value =  generateRandomPassword()
 })
 
+
 const updateSlider = () => {
     spanValuing.textContent = lengthSlider.value
     generateRandomPassword()
 }
+
 updateSlider()
+
 
 const copyPassword = () => {
     navigator.clipboard.writeText(password1El.value)//write the passed text into the system's clipboard
