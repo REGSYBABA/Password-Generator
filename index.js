@@ -13,10 +13,12 @@ let password1El = document.querySelector(".password-1")
 let password2El = document.querySelector(".password-2")
 let generator = document.querySelector(".container button")
 
+
 function getRandomCharacter() {
     let randomChar = Math.floor(Math.random() * characters.length)
     return characters[randomChar]
 }
+
 
 function generateRandomPassword() {
     let randomPassword = ""
@@ -47,6 +49,7 @@ function generateRandomPassword() {
     
     return randomPassword
 }
+
 
 generator.addEventListener("click",  function(){
     password1El.value =  generateRandomPassword()
