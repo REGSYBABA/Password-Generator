@@ -63,7 +63,7 @@ const copyPassword = () => {
     copyIcon.innerText = "check"
     setTimeout (() => {
         copyIcon.innerText = "copy_all"
-    }, 1000)
+    }, 1500)
 }
 
 
