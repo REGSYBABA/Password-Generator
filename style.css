@@ -46,24 +46,6 @@ body {
   padding: 30px;
 }
 
-@media only  screen  and (min-width: 300px) and (max-width: 1024px) {
-  .card{
-    max-width: 100%;
-    max-height: 25%;
-    margin:  100px auto;
-    display: table;
-  }
-}
-
-
-/* @media only  screen and (max-width: 900px) {
-    .card{
-      max-width: 100%;
-      max-height: 25%;
-      margin:  30px auto;
-      display: table;
-    }
-} */
 
 .container h1{
     margin-top: 50px;
@@ -101,12 +83,13 @@ p {
    border-radius: 6px;
    margin-top: 51px;
    margin-bottom: 35px;
-   font-family: cursive;
+   font-family: 'Ubuntu', sans-serif;
    letter-spacing: 2px;
    border: none;
    background-color: green;
    color: white;
    cursor: pointer;
+   font-weight: 700;
 }
 
 .generate-btn:hover {
@@ -157,7 +140,7 @@ p {
     margin-bottom: 55px;
     background-color: rgb(193, 133, 23);
     font-size: 18px;
-    font-family: cursive;
+    
 }
 
 
@@ -199,14 +182,6 @@ p {
     width: calc(100%/2);
 } 
 
- /* @media only screen and (min-width: 300px) and (max-width: 450px) {
-    .pass-settings .options .option{
-      flex-direction: column;
-      margin-left: 20px;
-      justify-content: space-between;
-    }
-  }  */
-
 .options .option:first-child {
     pointer-events: none;
 }
@@ -225,3 +200,46 @@ p {
     cursor: pointer;
     padding-left: 0.63rem;
 }
+
+@media only  screen  and (min-width: 300px) and (max-width: 1024px){
+    .card{
+      max-width: 100%;
+      max-height: 100%;
+      /* margin:  100px auto;
+      display: table; */
+      margin:  5px auto;
+    }
+}
+  
+/* @media only  screen and (max-width: 900px) {
+      .card{
+        max-width: 100%;
+        max-height: 25%;
+        margin:  30px auto;
+        display: table;
+      }
+} */
+
+@media only screen and (min-width: 280px) and (max-width: 450px){
+    .pass-settings .options .option{
+      flex-direction: row;
+      margin-left: 2rem;
+      /* justify-content: space-between; */
+    }
+    .password-1{
+        margin-left: .02px; 
+    }
+    .password-2{
+        margin-left: 1px;
+    }
+} 
+
+@media only  screen  and (min-width: 1377px) and (max-width: 2000px) {
+    .card{
+      max-width: 100%;
+      max-height: 100%;
+      /* margin:  100px auto;
+      display: table; */
+      margin:  150px auto;
+    }
+  }
